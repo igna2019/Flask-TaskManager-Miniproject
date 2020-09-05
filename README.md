@@ -2,7 +2,32 @@
 
 Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+This task manager will be built using Flask, MongoDB, and a frontend framework called Materialize. 
+	.	So what will we learn by building this application? 
+	.	Well, we'll learn how to do create, read, update, and delete calls, otherwise known as CRUD calls, to a Mongo database. 
+	.	And we'll do that in the context of a Flask application. 
+	.	We will also create HTML based user interfaces to demonstrate these CRUD calls in action. 
+	.	And in the spirit of good user experience, we'll style these interfaces using the Materialize framework. 
+	.	Now let's look at the project we're going to build. 
+	.	So the home page of our task manager application displays a summary of tasks. 
+	.	And that summary information is comprised of the task name, the task due date, and a task description. 
+	.	We can also edit a task, mark a task as complete, or add a new task on the home page. 
+	.	The information required to create a new task is a task category; a task name; a task description; a task due date, in this case, provided by a calendar where we can specify months, years, and the day; and, finally, the last piece of information is determining whether it's urgent or not. 
+	.	You can see here, there's our new task added. 
+	.	You can also edit an existing task. 
+	.	You might want to change the date or any of the other properties of this task. 
+	.	Once you update, again, you're brought back to the home page. 
+	.	And you can see the date has changed. 
+	.	Now, a task is assigned a category. 
+	.	And the application will provide you with the ability to edit, delete, and create new categories. 
+	.	So for example, you might change arts to music. 
+	.	You can see there that it's updated. 
+	.	And when we go to create a new task, you can see that that new task category is available. 
+	.	We can create a new category. 
+	.	Notice that all our interfaces use the same visual theme. 
+	.	We're consistent in our use of the Materialize framework. 
+	.	Our application is responsive, which means it will respond appropriately to the device on which it's being displayed. 
+
 
 ## Gitpod Reminders
 
