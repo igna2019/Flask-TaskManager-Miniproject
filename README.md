@@ -1,6 +1,6 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+Welcome igna2019,
 
 This task manager will be built using Flask, MongoDB, and a frontend framework called Materialize. 
 	.	So what will we learn by building this application? 
