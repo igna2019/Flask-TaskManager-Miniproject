@@ -25,9 +25,21 @@ So we'll return a meta Hello World message, a variant on the Hello World message
 You've done this already before in Practical Python.
 So let's call it Hello World again.
 
+create app.py with this entries:
+
+import os
+from flask import Flask
+
+app = Flask(__name__)
+
 @app.route('/')
 def hello():
     return 'Hello World....again'
+
+if __name__=='__main__':
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
 
     
 And once this is in place, we will then set up our IP address and our port number so that Cloud9 knows how to run and where to run our application.
