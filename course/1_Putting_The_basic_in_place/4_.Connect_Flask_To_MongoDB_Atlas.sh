@@ -50,7 +50,7 @@ to test, open a new terminal and type:
 the outcome should be:
 
 gitpod /workspace/Flask-TaskManager-Miniproject $ echo $MONGO_URI
-mongodb+srv://root:r00tUser@cluster0.pbgap.mongodb.net/task_manager?retryWrites=true&w=majority
+mongodb+srv://root:<password>@cluster0.pbgap.mongodb.net/task_manager?retryWrites=true&w=majority
 gitpod /workspace/Flask-TaskManager-Miniproject $ 
 
 It's worth mentioning that this is not good practice to have our username and our password in our application like this.
