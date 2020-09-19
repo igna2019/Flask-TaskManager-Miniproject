@@ -111,6 +111,27 @@ Create the body.
 Now we're going to use our templating language to loop through the tasks in our collection.
 So we'll use our {% for task in tasks $}.
 I'd like to create my {% end for %} as well before adding any content between our for and end for.
+
+
+
+<html>
+<head>
+</head>
+
+<body>
+    {% for task in tasks %}
+        {{task.task_name}}
+        {{task.category_name}}
+        {{task.category_description}}
+        {{task.is_urgent}}
+        {{task.due_date}}
+
+    {% endfor %}
+</body>
+</html>
+
+
+
 What we're just going to do here is display the contents of each field name that's in our database in our tasks collection.
 You'll remember when we created it that it's tasks_name, category_name, tasks_description, is_urgent, and due_date.
 Now that all of that's in place, we can save our file, go back to our app.py, and run it.
