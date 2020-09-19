@@ -53,6 +53,43 @@ gitpod /workspace/Flask-TaskManager-Miniproject $ echo $MONGO_URI
 mongodb+srv://root:<password>@cluster0.pbgap.mongodb.net/task_manager?retryWrites=true&w=majority
 gitpod /workspace/Flask-TaskManager-Miniproject $ 
 
+
+
+
+Set environment 
+
+https://github.com/bravoalpha79/environment-variables#setting-up-environment-variables-using-envpy-file
+
+
+Setting up environment variables using env.py file
+In the root of your project (where your app's main Python file is - e.g. app.py for Flask, manage.py for Django), create a file named env.py.
+
+If you don't have a .gitignore file yet, in the root of your project create .gitignore with env.py in it, using the following command in the Terminal:
+echo env.py > .gitignore
+
+If you already have a .gitignore file, add env.py to it and save the file.
+
+In the newly-created env.py, add the following:
+
+import os 
+and below that, set your environment variable(s) using the following format:
+
+os.environ["VARIABLE_NAME"] = "yourvariablevalue"
+So, for example:
+
+import os   
+
+os.environ["SECRET_KEY"] = "somesupersecretkey"
+os.environ["MONGO_URI"] = "mongodb+srv://username:supersecretpassword@myfirstcluster-a123b.mongodb.net/mydatabase?retryWrites=true&w=majority"
+
+
+
+
+
+
+
+
+
 It's worth mentioning that this is not good practice to have our username and our password in our application like this.
 When we push it up to GitHub, it's going to be visible to the whole world.
 It's far better to use an environment variable, which is what I suggest you do in production.
