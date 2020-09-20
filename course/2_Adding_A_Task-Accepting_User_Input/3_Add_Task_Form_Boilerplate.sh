@@ -57,7 +57,8 @@ def add_task():
 
 This function works.
 It redirected to the addtask.html page.
-What we're going to do now is we're going to use a form because when you want to add a task, the easiest way to do this is to create a HTML form that the user can fill in form elements and submit the form to the server.
+What we're going to do now is we're going to use a form because when you want to add a task, the easiest way to do this is to create a HTML form that 
+the user can fill in form elements and submit the form to the server.
 So we're going to use Materialize form elements.
 They're quite elegant, and they conform to good UX as well.
 
