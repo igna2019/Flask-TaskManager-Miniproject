@@ -50,7 +50,8 @@ addtask.html
  <div class="row">
 
 
-You can see when we copied across the code, it already had a class of input-field, which styles it in that in that Materialize form style, and by default, it has a col setting of s12.
+You can see when we copied across the code, it already had a class of input-field, which styles it in that in that Materialize form style, 
+and by default, it has a col setting of s12.
 Let's do a refresh here.
 We need some jQuery to initialize this.
 And here it is.
@@ -64,7 +65,8 @@ Now you remember we already have a ready function for the document element in pl
 So let's go back to our base.html and paste it in below our call to the collapsible function.
 Save and do a refresh.
 And then we'll test again.
-Our next step is to wire up the data from our categories collection in MongoDB and dynamically generate an option instance for each category document we have in our collection.
+Our next step is to wire up the data from our categories collection in MongoDB and dynamically generate an option instance for each category 
+document we have in our collection.
 Let's change our icon prefix to pole.
 
 
@@ -121,7 +123,8 @@ We need one option in addition to the one that's disabled and selected.
           {% endfor %}
 </select>
 
-But we only need to display one option inside our for loop because, remember, using a for loop in these templated languages allows us to have conditional rendering.
+But we only need to display one option inside our for loop because, remember, using a for loop in these templated languages allows us to have
+conditional rendering.
 So what that means is the option HTML segment there will be displayed for each instance of a category in the collection itself.
 So we have conditional rendering.
 If we have four categories, we will have four options. If we have 10 categories, we'll have 10 options, and so on.
@@ -131,6 +134,7 @@ But the value behind the scenes is the data that will be submitted to the form, 
 There we have it.
 Home, work and music.
 So it's looking good.
-We've added a new select, we've bound it using the categories, we've wrapped it inside a for loop, and we are binding the category name to the option value and the display within the option.
+We've added a new select, we've bound it using the categories, we've wrapped it inside a for loop, and we are binding the category name
+to the option value and the display within the option.
 Next thing we need to do, then, is add a submit button and the associated insert function over in Flask.
 And we will be able to add a new task.
