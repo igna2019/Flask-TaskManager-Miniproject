@@ -29,18 +29,25 @@ And we're going to drop that into our form as a test.
 Before we go any further, let's wrap it in a row, so it will behave and display correctly.
 
 
-<div class="row">
-      <div class="input-field col s12">
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
-        <label>Materialize Select</label>
-      </div>
-    </div>
+addtask.html
 
+
+<div class="row">
+    <form action="" method="POST" class="col s12">
+    <div class="row">
+    <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+</div>
+    
+    
+ <div class="row">
 
 
 You can see when we copied across the code, it already had a class of input-field, which styles it in that in that Materialize form style, and by default, it has a col setting of s12.
