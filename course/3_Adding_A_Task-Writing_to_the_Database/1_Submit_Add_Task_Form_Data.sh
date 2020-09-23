@@ -22,7 +22,8 @@ By the way, once we do this we can reuse this approach as a template for editing
 The last thing we need is a button.
 So we go back to Materialize, and we grab some button markup.
 You can see here, the button has an associated icon, as well.
-Convention has it that the button goes in at the end of the form because you fill in your form elements, you scan them, you view them, and, once you're happy, you submit.
+Convention has it that the button goes in at the end of the form because you fill in your form elements, you scan them, you view them, 
+and, once you're happy, you submit.
 Let's put our button inside here.
 
 <div class="row">
@@ -59,7 +60,8 @@ Remember, whenever you submit information to a URI or to some web location, it i
 We grab that request object.
 And inside that, we say show me the form.
 And we're converting that form, in our case, to a dictionary, so it can easily be understood by Mongo.
-Any of the form fields that have data inside them, or are active, will be submitted as part of the form submission, and ultimately, we'll go on to create a new document in our tasks collection.
+Any of the form fields that have data inside them, or are active, will be submitted as part of the form submission, and ultimately, 
+we'll go on to create a new document in our tasks collection.
 In reality, you'll probably want to do some validation, both on the HTML side and inside here for required fields.
 But for our purposes now, for simplicity, we will just send the entire form.
 Once that's done, we redirect to get_tasks, so we can view that new task in our collection.
